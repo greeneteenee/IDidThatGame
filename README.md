@@ -6,7 +6,7 @@ A virtual card game that gets players up and moving.
 ## Game play summary
 Players flip over three cards to create a new challenge. If the challenge is successfully completed, the player gets a point. The player with the most point wins. Designed for ages 4 and over, there are endless possibilites for hilarious, active family friendly fun.
 
-### Game customization
+![Game screenshot](https://imgur.com/D1ffb7Q)
 
 ## Built With (Prerequisites)
 
@@ -18,6 +18,7 @@ Players flip over three cards to create a new challenge. If the challenge is suc
 - [MVC](https://docs.microsoft.com/en-nz/aspnet/core/mvc/overview?view=aspnetcore-3.0)
 - [jQuery](https://jquery.com/)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- Follows Microsoft [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
 
 ## Running the project
 - .Net Core 3.1.X SDK is required
