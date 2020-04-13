@@ -6,7 +6,7 @@ A virtual card game that gets players up and moving.
 ## Game play summary
 Players flip over three cards to create a new challenge. If the challenge is successfully completed, the player gets a point. The player with the most point wins. Designed for ages 4 and over, there are endless possibilites for hilarious, active family friendly fun.
 
-![Game screenshot](https://imgur.com/D1ffb7Q)
+![](https://i.imgur.com/D1ffb7Q.png)
 
 ## Built With (Prerequisites)
 
