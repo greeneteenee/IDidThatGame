@@ -4,14 +4,16 @@ using IDidThatGame.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IDidThatGame.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200417003706_AddPlace")]
+    partial class AddPlace
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,27 +40,6 @@ namespace IDidThatGame.Data.Migrations
                     b.HasKey("ActionId");
 
                     b.ToTable("Actions");
-                });
-
-            modelBuilder.Entity("IDidThatGame.Models.Challenge", b =>
-                {
-                    b.Property<int>("ChallengeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<bool>("Advanced")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ChallengeName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ChallengeId");
-
-                    b.ToTable("Challenges");
                 });
 
             modelBuilder.Entity("IDidThatGame.Models.Place", b =>
