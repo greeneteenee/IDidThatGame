@@ -10,22 +10,22 @@ using IDidThatGame.Models;
 
 namespace IDidThatGame.Controllers
 {
-    public class ChallengesController : Controller
+    public class ActionItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ChallengesController(ApplicationDbContext context)
+        public ActionItemsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Challenges
+        // GET: ActionItems
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Challenges.ToListAsync());
+            return View(await _context.Actions.ToListAsync());
         }
 
-        // GET: Challenges/Details/5
+        // GET: ActionItems/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace IDidThatGame.Controllers
                 return NotFound();
             }
 
-            var challenge = await _context.Challenges
-                .FirstOrDefaultAsync(m => m.ChallengeId == id);
-            if (challenge == null)
+            var actionItem = await _context.Actions
+                .FirstOrDefaultAsync(m => m.ActionId == id);
+            if (actionItem == null)
             {
                 return NotFound();
             }
 
-            return View(challenge);
+            return View(actionItem);
         }
 
-        // GET: Challenges/Create
+        // GET: ActionItems/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Challenges/Create
+        // POST: ActionItems/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ChallengeId,ChallengeName,Category,Advanced")] Challenge challenge)
+        public async Task<IActionResult> Create([Bind("ActionId,ActionName,Category,Advanced")] ActionItem actionItem)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(challenge);
+                _context.Add(actionItem);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(challenge);
+            return View(actionItem);
         }
 
-        // GET: Challenges/Edit/5
+        // GET: ActionItems/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace IDidThatGame.Controllers
                 return NotFound();
             }
 
-            var challenge = await _context.Challenges.FindAsync(id);
-            if (challenge == null)
+            var actionItem = await _context.Actions.FindAsync(id);
+            if (actionItem == null)
             {
                 return NotFound();
             }
-            return View(challenge);
+            return View(actionItem);
         }
 
-        // POST: Challenges/Edit/5
+        // POST: ActionItems/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ChallengeId,ChallengeName,Category,Advanced")] Challenge challenge)
+        public async Task<IActionResult> Edit(int id, [Bind("ActionId,ActionName,Category,Advanced")] ActionItem actionItem)
         {
-            if (id != challenge.ChallengeId)
+            if (id != actionItem.ActionId)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace IDidThatGame.Controllers
             {
                 try
                 {
-                    _context.Update(challenge);
+                    _context.Update(actionItem);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ChallengeExists(challenge.ChallengeId))
+                    if (!ActionItemExists(actionItem.ActionId))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace IDidThatGame.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(challenge);
+            return View(actionItem);
         }
 
-        // GET: Challenges/Delete/5
+        // GET: ActionItems/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,30 +124,30 @@ namespace IDidThatGame.Controllers
                 return NotFound();
             }
 
-            var challenge = await _context.Challenges
-                .FirstOrDefaultAsync(m => m.ChallengeId == id);
-            if (challenge == null)
+            var actionItem = await _context.Actions
+                .FirstOrDefaultAsync(m => m.ActionId == id);
+            if (actionItem == null)
             {
                 return NotFound();
             }
 
-            return View(challenge);
+            return View(actionItem);
         }
 
-        // POST: Challenges/Delete/5
+        // POST: ActionItems/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var challenge = await _context.Challenges.FindAsync(id);
-            _context.Challenges.Remove(challenge);
+            var actionItem = await _context.Actions.FindAsync(id);
+            _context.Actions.Remove(actionItem);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ChallengeExists(int id)
+        private bool ActionItemExists(int id)
         {
-            return _context.Challenges.Any(e => e.ChallengeId == id);
+            return _context.Actions.Any(e => e.ActionId == id);
         }
     }
 }

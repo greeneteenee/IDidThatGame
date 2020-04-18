@@ -10,7 +10,7 @@ namespace IDidThatGame.Models
     /// <summary>
     /// A verb to describe what action a player must take during turn
     /// </summary>
-    public class Action
+    public class ActionItem
     {
 
         [Key]

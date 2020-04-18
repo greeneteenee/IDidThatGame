@@ -14,8 +14,8 @@ namespace IDidThatGame.Data
         {
         }
 
-        public DbSet<IDidThatGame.Models.Action> Actions { get; set; }
-        public DbSet<Place> Places { get; set; }
-        public DbSet<Challenge> Challenges { get; set; }
+        public DbSet<ActionItem> Actions { get; set; }
+        public DbSet<PlaceItem> Places { get; set; }
+        public DbSet<ChallengeItem> Challenges { get; set; }
     }
 }

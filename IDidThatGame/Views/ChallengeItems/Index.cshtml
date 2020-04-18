@@ -1,4 +1,4 @@
-﻿@model IEnumerable<IDidThatGame.Models.Action>
+﻿@model IEnumerable<IDidThatGame.Models.ChallengeItem>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ActionName)
+                @Html.DisplayNameFor(model => model.ChallengeName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Category)
@@ -28,7 +28,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ActionName)
+                @Html.DisplayFor(modelItem => item.ChallengeName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Category)
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Advanced)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ActionId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ActionId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ActionId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ChallengeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ChallengeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ChallengeId">Delete</a>
             </td>
         </tr>
 }
