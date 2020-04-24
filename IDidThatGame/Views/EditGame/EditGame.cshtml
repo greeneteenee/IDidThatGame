@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<IDidThatGame.Models.EditGameViewModel>
+
 @{
     ViewData["Title"] = "Edit Game";
 }
@@ -10,7 +11,34 @@
         <div class="col"><a asp-controller="ChallengeItems" asp-action="Create"><img src="~/images/AddChallengeButton.png" class="img-fluid rounded" alt="Add Challenge button"></a></div>
     </div>
     <div class="row">
-        <div class="col"></div>
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ActionName)
+                        </th>
+                     
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ActionName)
+                            </td>                          
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.ActionId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.ActionId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.ActionId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
         <div class="col"></div>
         <div class="col"></div>
     </div>

@@ -12,6 +12,9 @@ namespace IDidThatGame.Models
         public List<ActionItem> actions { get; set; }
         public List<PlaceItem> places { get; set; }
         public List<ChallengeItem> challenges { get; set; }
+        public int ActionId { get; set; }
+
+        public string ActionName { get; set; }
 
         private readonly ApplicationDbContext _context; //c# convention to use underscore to set field instead of using this keyword down below, "readonly" means only the constructor can modify this variable
 
