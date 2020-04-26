@@ -149,5 +149,14 @@ namespace IDidThatGame.Controllers
         {
             return _context.Challenges.Any(e => e.ChallengeId == id);
         }
+
+        public static async Task<String> GetRandomChallenge(ApplicationDbContext context)
+        {
+            Random random = new Random();
+            List<ChallengeItem> allChallengeItems = await ChallengeDb.GetChallengeItems(context);
+            string randomChallenge = (allChallengeItems[random.Next(allChallengeItems.Count)]).ChallengeName.ToString();
+            return randomChallenge;
+        }
+
     }
 }

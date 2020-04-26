@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using IDidThatGame.Data;
 using IDidThatGame.Models;
 
+
 namespace IDidThatGame.Controllers
 {
     public class ActionItemsController : Controller
@@ -17,7 +18,7 @@ namespace IDidThatGame.Controllers
         public ActionItemsController(ApplicationDbContext context)
         {
             _context = context;
-        }
+        }      
 
         // GET: ActionItems
         public async Task<IActionResult> Index()
@@ -149,5 +150,6 @@ namespace IDidThatGame.Controllers
         {
             return _context.Actions.Any(e => e.ActionId == id);
         }
+
     }
 }

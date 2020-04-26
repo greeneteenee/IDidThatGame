@@ -149,5 +149,14 @@ namespace IDidThatGame.Controllers
         {
             return _context.Places.Any(e => e.PlaceId == id);
         }
+
+        public static async Task<String> GetRandomPlace(ApplicationDbContext context)
+        {
+            Random random = new Random();
+            List<PlaceItem> allPlaceItems = await PlaceDb.GetPlaceItems(context);
+            string randomPlace = (allPlaceItems[random.Next(allPlaceItems.Count)]).PlaceName.ToString();
+            return randomPlace;
+        }
+
     }
 }

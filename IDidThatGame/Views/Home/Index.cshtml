@@ -40,13 +40,29 @@
                 
             
         <div class="row mt-3">
-            <div class="col"><img src="~/images/ActionButton.jpg" class="img-fluid rounded" alt="Action card"></div>
-            <div class="col"><img src="~/images/PlaceButton.jpg" class="img-fluid rounded" alt="Place card"></div>
-            <div class="col"><img src="~/images/ChallengeButton.jpg" class="img-fluid rounded" alt="Challenge card"></div>
+            <div class="col"><a asp-controller="Home" asp-action="GetRandomAction"><img src="~/images/ActionButton.jpg" class="img-fluid rounded" alt="Action card"></a></div>
+            <div class="col"><a asp-controller="Home" asp-action="GetRandomPlace"><img src="~/images/PlaceButton.jpg" class="img-fluid rounded" alt="Place card"></a></div>
+            <div class="col"><a asp-controller="Home" asp-action="GetRandomChallenge"><img src="~/images/ChallengeButton.jpg" class="img-fluid rounded" alt="Challenge card"></a></div>
         </div>
         <div class="row mt-1">
-            <div class="col"><img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" /></div>
-            <div class="col"><img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" /></div>
-            <div class="col"><img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" /></div>
+            <div class="col">
+                <div class="card overflow-hidden text-center">
+                    <img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center"><p>@ViewData["RandomAction"]</p></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden text-center">
+                    <img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center"><p>@ViewData["RandomPlace"]</p></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden text-center">
+                    <img src="~/images/CardBorder.png" class="img-fluid rounded" alt="Action card flipped border" />
+                    <div class="card-img-overlay d-flex flex-column justify-content-center"><p>@ViewData["RandomChallenge"]</p></div>
+                </div>
+            </div>
+
         </div>
     </div>
