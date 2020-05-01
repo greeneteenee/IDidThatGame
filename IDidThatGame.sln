@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDidThatGame", "IDidThatGame\IDidThatGame.csproj", "{4050BBF7-D642-478D-A257-234BE0AB2911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDidThatGame", "IDidThatGame\IDidThatGame.csproj", "{4050BBF7-D642-478D-A257-234BE0AB2911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic\GameLogic.csproj", "{4BA9D443-A8A8-432B-A6EE-2DB9CD1EC713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4050BBF7-D642-478D-A257-234BE0AB2911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4050BBF7-D642-478D-A257-234BE0AB2911}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4050BBF7-D642-478D-A257-234BE0AB2911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA9D443-A8A8-432B-A6EE-2DB9CD1EC713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA9D443-A8A8-432B-A6EE-2DB9CD1EC713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA9D443-A8A8-432B-A6EE-2DB9CD1EC713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA9D443-A8A8-432B-A6EE-2DB9CD1EC713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

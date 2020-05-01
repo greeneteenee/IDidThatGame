@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using IDidThatGame.Models;
 using IDidThatGame.Data;
+using GameLogic;
 
 namespace IDidThatGame.Controllers
 {
@@ -14,6 +15,13 @@ namespace IDidThatGame.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
+        Game thisGame = new Game();
+        Player player1 = new Player("Thing 1");
+        Player player2 = new Player("Thing 2");
+        Player currPlayer = null;
+        bool turn = false; //player1 turn
+        int numTurns = 0;
+
 
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
@@ -39,6 +47,7 @@ namespace IDidThatGame.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
 
 
         public async Task<IActionResult> GetRandomAction()

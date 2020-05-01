@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT2H13M46.569232S" SolutionTotalViewTime="PT5H3M4.7900458S" SolutionTotalDebugTime="PT3M53.0940793S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT4H11M22.7425577S" SolutionTotalViewTime="PT5H38M34.8318743S" SolutionTotalDebugTime="PT3M5.1110232S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
@@ -14,139 +14,109 @@
   </ProjectsCreatedDateList>
   <SessionTimeList />
   <LastSessionTimeList>
-    <DevTrackerDataItem ViewActiveTime="PT2M47.969165S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT53.0745604S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Models\ActionItem.cs</Item>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\appsettings.json</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T14:29:04.7396843-07:00</CreatedDate>
+      <CreatedDate>2020-04-26T19:12:30.3441608-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M47.1763542S" EditActiveTime="PT3M18.5076699S">
-      <ModifiedDate>2020-04-20T15:58:43.4765129-07:00</ModifiedDate>
-      <ModifiedBy>Unknown User</ModifiedBy>
+    <DevTrackerDataItem ViewActiveTime="PT2M7.9467887S" EditActiveTime="PT5M43.4681499S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\ActionItemsController.cs</Item>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Class1.cs</Item>
       <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T11:37:40.2216833-07:00</CreatedDate>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T17:53:01.9371679-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT2M23.1896325S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT23.6124937S" EditActiveTime="PT20.3880171S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\ActionsController.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T12:02:06.978029-07:00</CreatedDate>
-      <ViewedBy>Unknown User</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M0.0544999S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Data\ApplicationDbContext.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T15:47:49.7088116-07:00</CreatedDate>
-      <ViewedBy>Unknown User</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT48.0323735S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
+      <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>Debug Mode</Item>
       <ItemType>DebugModeItem</ItemType>
       <ProjectName />
-      <CreatedDate>2020-04-20T11:39:14.8746732-07:00</CreatedDate>
+      <CreatedDate>2020-04-26T17:10:07.758715-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT22M54.0194935S" EditActiveTime="PT8M44.5596051S">
-      <ModifiedDate>2020-04-20T14:02:44.6757293-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT20M8.4150629S" EditActiveTime="PT4M51.8971989S">
+      <ModifiedDate>2020-04-26T19:35:21.1655488-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\EditGame\EditGame.cshtml</Item>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Game.cs</Item>
       <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T11:42:18.5705843-07:00</CreatedDate>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:04:36.2612807-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M5.6573552S" EditActiveTime="PT29M11.9865409S">
-      <ModifiedDate>2020-04-20T15:56:30.622598-07:00</ModifiedDate>
-      <ModifiedBy>Unknown User</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\EditGameController.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T11:38:55.8063704-07:00</CreatedDate>
-      <ViewedBy>Unknown User</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M32.8955368S" EditActiveTime="PT13M11.6536404S">
-      <ModifiedDate>2020-04-20T15:58:43.4945166-07:00</ModifiedDate>
-      <ModifiedBy>Unknown User</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Models\EditGameViewModel.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T14:46:41.3413637-07:00</CreatedDate>
-      <ViewedBy>Unknown User</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT21.1238046S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT48.7315217S" EditActiveTime="PT22.7139533S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
+      <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Actions\Index.cshtml</Item>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.cs</Item>
       <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T11:57:37.4216297-07:00</CreatedDate>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:18:15.2249556-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M52.7151021S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT3M15.5137368S" EditActiveTime="PT12M9.4987069S">
+      <ModifiedDate>2020-04-26T19:35:21.1775515-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:09:32.0538878-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT53.9079084S" EditActiveTime="PT45.0096257S">
+      <ModifiedDate>2020-04-26T19:29:15.0746025-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\IDidThatGame.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:21:56.6258068-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.4655032S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\ActionItems\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T14:21:42.2150944-07:00</CreatedDate>
+      <CreatedDate>2020-04-26T17:08:25.9111178-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT14.3077102S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
+    <DevTrackerDataItem ViewActiveTime="PT6M26.11489S" EditActiveTime="PT26M57.1808821S">
+      <ModifiedDate>2020-04-26T17:47:37.3547048-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T14:54:58.7599526-07:00</CreatedDate>
+      <CreatedDate>2020-04-26T17:08:35.3776205-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT35.884028S" EditActiveTime="PT1M29.4736544S">
-      <ModifiedDate>2020-04-20T12:40:49.2907483-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M59.357658S" EditActiveTime="PT34.4024483S">
+      <ModifiedDate>2020-04-26T18:14:13.9036718-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Startup.cs</Item>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Player.cs</Item>
       <ItemType>ProjectItem</ItemType>
-      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-20T12:34:43.9641625-07:00</CreatedDate>
-      <ViewedBy>Unknown User</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT5M33.0654699S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IDidThatGameDb/True/SqlTable/dbo.Actions.sql</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2020-04-20T13:13:04.662419-07:00</CreatedDate>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T18:12:33.8820844-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
   </LastSessionTimeList>
@@ -246,6 +216,16 @@
       <CreatedDate>2020-04-15T18:07:28.3887952-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT53.0745604S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\appsettings.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:12:30.3441608-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT4M34.7445859S" EditActiveTime="PT5M28.6444189S">
       <ModifiedDate>2020-04-16T17:59:08.2121026-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
@@ -267,6 +247,16 @@
       <CreatedDate>2020-04-16T18:49:17.9691546-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M7.9467887S" EditActiveTime="PT5M43.4681499S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Class1.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T17:53:01.9371679-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT2M1.0835543S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -277,10 +267,10 @@
       <CreatedDate>2020-04-18T06:54:10.5494362-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M58.4369165S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT2M22.0494102S" EditActiveTime="PT20.3880171S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>5</ViewedCount>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>6</ViewedCount>
       <Item>Debug Mode</Item>
       <ItemType>DebugModeItem</ItemType>
       <ProjectName />
@@ -351,14 +341,47 @@
       <CreatedDate>2020-04-15T18:27:15.7761776-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT9M6.2641338S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT20M8.4100621S" EditActiveTime="PT4M51.8971989S">
+      <ModifiedDate>2020-04-26T19:35:21.1655488-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Game.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:04:36.2612807-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT48.7315217S" EditActiveTime="PT22.7139533S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>7</ViewedCount>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:18:15.2249556-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT12M21.7778706S" EditActiveTime="PT12M9.4987069S">
+      <ModifiedDate>2020-04-26T19:35:21.1775515-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>8</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
       <CreatedDate>2020-04-16T18:32:03.4590755-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT53.9079084S" EditActiveTime="PT45.0096257S">
+      <ModifiedDate>2020-04-26T19:29:15.0746025-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\IDidThatGame.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:21:56.6258068-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT5M18.3263268S" EditActiveTime="PT1M35.5315701S">
@@ -371,10 +394,11 @@
       <CreatedDate>2020-04-18T06:56:11.6329905-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M5.3361252S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>3</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT10M31.4510152S" EditActiveTime="PT26M57.1808821S">
+      <ModifiedDate>2020-04-26T17:47:37.3547048-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
@@ -391,10 +415,10 @@
       <CreatedDate>2020-04-18T08:16:13.4591322-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M52.7151021S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT2M2.1806053S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\ActionItems\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
@@ -420,6 +444,17 @@
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
       <CreatedDate>2020-04-16T18:48:12.9281307-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M59.357658S" EditActiveTime="PT34.4024483S">
+      <ModifiedDate>2020-04-26T18:14:13.9036718-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Player.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T18:12:33.8820844-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT35.884028S" EditActiveTime="PT1M29.4736544S">
@@ -465,6 +500,111 @@
     </DevTrackerDataItem>
   </TotalTimeList>
   <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT53.9079084S" EditActiveTime="PT45.0096257S">
+      <ModifiedDate>2020-04-26T19:29:15.0746025-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\IDidThatGame.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:21:56.6258068-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT48.7315217S" EditActiveTime="PT22.7139533S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:18:15.2249556-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT53.0745604S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\appsettings.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:12:30.3441608-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M15.5137368S" EditActiveTime="PT12M9.4987069S">
+      <ModifiedDate>2020-04-26T19:35:21.1775515-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:09:32.0538878-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20M8.4110622S" EditActiveTime="PT4M51.8971989S">
+      <ModifiedDate>2020-04-26T19:35:21.1655488-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Game.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T19:04:36.2612807-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M59.357658S" EditActiveTime="PT34.4024483S">
+      <ModifiedDate>2020-04-26T18:14:13.9036718-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Player.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T18:12:33.8820844-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M7.9467887S" EditActiveTime="PT5M43.4681499S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\Class1.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\GameLogic\GameLogic.csproj</ProjectName>
+      <CreatedDate>2020-04-26T17:53:01.9371679-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT23.6124937S" EditActiveTime="PT20.3880171S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2020-04-26T17:10:07.758715-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M26.11489S" EditActiveTime="PT26M57.1808821S">
+      <ModifiedDate>2020-04-26T17:47:37.3547048-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T17:08:35.3776205-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.4655032S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\ActionItems\Index.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-04-26T17:08:25.9111178-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT6M0.0544999S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
