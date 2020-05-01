@@ -57,7 +57,8 @@ namespace IDidThatGame.Controllers
             var randomAction = allActionItems[random.Next(allActionItems.Count)];
             string randomActionName = randomAction.ActionName;
 
-            ViewData["RandomAction"] = randomActionName;
+            TempData["RandomAction"] = randomActionName;
+            TempData.Keep();
             return View("Index");
         }
 
@@ -68,7 +69,8 @@ namespace IDidThatGame.Controllers
             var randomPlace = allPlaceItems[random.Next(allPlaceItems.Count)];
             string randomPlaceName = randomPlace.PlaceName;
 
-            ViewData["RandomPlace"] = randomPlaceName;
+            TempData["RandomPlace"] = randomPlaceName;           
+            TempData.Keep();
             return View("Index");
         }
 
@@ -79,7 +81,8 @@ namespace IDidThatGame.Controllers
             var randomChallenge = allChallengeItems[random.Next(allChallengeItems.Count)];
             string randomChallengeName = randomChallenge.ChallengeName;
 
-            ViewData["RandomChallenge"] = randomChallengeName;
+            TempData["RandomChallenge"] = randomChallengeName;
+            TempData.Keep();
             return View("Index");
         }
 
