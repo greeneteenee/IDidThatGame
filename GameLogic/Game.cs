@@ -9,8 +9,11 @@ namespace GameLogic
     /// </summary>
     public class Game
     {
-        const int maxNumTurns = 10;
-     
+        public bool turn { get; set; }
+        public byte numTurns { get; set; }
+
+        const byte maxNumTurns = 10;
+       
         public bool ChangeTurn(bool turn) 
         {
             return turn = !turn;

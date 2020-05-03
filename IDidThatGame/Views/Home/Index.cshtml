@@ -14,22 +14,22 @@
                        
                     </div>
                     <div class="col">
-                        <h1 class="score d-inline">0</h1>
+                        <h1 class="score d-inline">@TempData["Player1Score"]</h1>
                     </div>
                 </div>
             </div>
             <div class="col">               
-                    <div><h5 class="text-center mb-3">Turns left: 10</h5></div>            
+                    <div><h5 class="text-center mb-3">Turns left: @TempData["NumberTurnsLeft"]</h5></div>            
             
                 <div class="row">
-                    <div class="col"><a asp-controller="#" asp-action="#"><img src="~/images/ThumbDown.png" class="img-fluid d-inline invisible" alt="Thumbs down"></a></div>
-                    <div class="col"><a asp-controller="#" asp-action="#"><img src="~/images/ThumbUp.png" class="img-fluid d-inline invisible" alt="Thumbs up"></a></div>
+                    <div class="col"><a asp-controller="Home" asp-action="ThumbsDown"><img src="~/images/ThumbDown.png" class="img-fluid d-inline @TempData["Visibility"]" alt="Thumbs down"></a></div>
+                    <div class="col"><a asp-controller="Home" asp-action="ThumbsUp"><img src="~/images/ThumbUp.png" class="img-fluid d-inline @TempData["Visibility"]" alt="Thumbs up"></a></div>
                 </div>
             </div>
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <h1 class="score float-right d-inline">0</h1>
+                        <h1 class="score float-right d-inline">@TempData["Player2Score"]</h1>
                        
                     </div>
                     <div class="col">
@@ -45,9 +45,9 @@
                 
             
         <div class="row mt-3">
-            <div class="col"><a asp-controller="Home" asp-action="GetRandomAction"><img src="~/images/ActionButton.jpg" class="img-fluid rounded" alt="Action card"></a></div>
-            <div class="col"><a asp-controller="Home" asp-action="GetRandomPlace"><img src="~/images/PlaceButton.jpg" class="img-fluid rounded" alt="Place card"></a></div>
-            <div class="col"><a asp-controller="Home" asp-action="GetRandomChallenge"><img src="~/images/ChallengeButton.jpg" class="img-fluid rounded" alt="Challenge card"></a></div>
+            <div class="col"><a class="btn p-0 @TempData["ActionCardState"]" name="ActionButton" asp-controller="Home" asp-action="GetRandomAction"><img src="~/images/ActionButton.jpg" class="img-fluid rounded" alt="Action card"></a></div>
+            <div class="col"><a class="btn p-0 @TempData["PlaceCardState"]" asp-controller="Home" asp-action="GetRandomPlace"><img src="~/images/PlaceButton.jpg" class="img-fluid rounded" alt="Place card"></a></div>
+            <div class="col"><a class="btn p-0 @TempData["ChallengeCardState"]" asp-controller="Home" asp-action="GetRandomChallenge"><img src="~/images/ChallengeButton.jpg" class="img-fluid rounded" alt="Challenge card"></a></div>
         </div>
         <div class="row mt-1">
             <div class="col">

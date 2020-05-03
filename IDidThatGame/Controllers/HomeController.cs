@@ -15,18 +15,17 @@ namespace IDidThatGame.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
-        Game thisGame = new Game();
-        Player player1 = new Player("Thing 1");
-        Player player2 = new Player("Thing 2");
-        Player currPlayer = null;
-        bool turn = false; //player1 turn
-        int numTurns = 0;
-
+        private static Game thisGame = new Game();
+        private static Player player1 = new Player("Thing 1");
+        private static Player player2 = new Player("Thing 2");
+        private static Player currPlayer = null;     
+       
 
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
+
         }  
 
        
@@ -34,6 +33,11 @@ namespace IDidThatGame.Controllers
 
         public IActionResult Index()
         {
+            TempData["NumberTurnsLeft"] = thisGame.TurnsLeft(thisGame.numTurns).ToString();
+            TempData["Visibility"] = "invisible";
+            TempData["Player1Score"] = player1.PlayerScore.ToString();
+            TempData["Player2Score"] = player2.PlayerScore.ToString();
+            TempData.Keep();
             return View();
         }
 
@@ -55,10 +59,15 @@ namespace IDidThatGame.Controllers
             Random random = new Random();
             List<ActionItem> allActionItems = await ActionDb.GetActionsItems(_context);
             var randomAction = allActionItems[random.Next(allActionItems.Count)];
-            string randomActionName = randomAction.ActionName;
-
+            string randomActionName = randomAction.ActionName;         
             TempData["RandomAction"] = randomActionName;
-            TempData.Keep();
+            TempData["ActionCardState"] = "disabled";
+           
+            if (AllCardsFlipped() == true)
+            {
+                TempData["Visibility"] = "";
+            }
+            TempData.Keep();         
             return View("Index");
         }
 
@@ -67,10 +76,15 @@ namespace IDidThatGame.Controllers
             Random random = new Random();
             List<PlaceItem> allPlaceItems = await PlaceDb.GetPlaceItems(_context);
             var randomPlace = allPlaceItems[random.Next(allPlaceItems.Count)];
-            string randomPlaceName = randomPlace.PlaceName;
-
-            TempData["RandomPlace"] = randomPlaceName;           
-            TempData.Keep();
+            string randomPlaceName = randomPlace.PlaceName;           
+            TempData["RandomPlace"] = randomPlaceName;
+            TempData["PlaceCardState"] = "disabled";
+           
+            if (AllCardsFlipped() == true)
+            {
+                TempData["Visibility"] = "";
+            }
+            TempData.Keep();          
             return View("Index");
         }
 
@@ -79,11 +93,88 @@ namespace IDidThatGame.Controllers
             Random random = new Random();
             List<ChallengeItem> allChallengeItems = await ChallengeDb.GetChallengeItems(_context);
             var randomChallenge = allChallengeItems[random.Next(allChallengeItems.Count)];
-            string randomChallengeName = randomChallenge.ChallengeName;
-
+            string randomChallengeName = randomChallenge.ChallengeName;          
             TempData["RandomChallenge"] = randomChallengeName;
-            TempData.Keep();
+            TempData["ChallengeCardState"] = "disabled";
+          
+            if (AllCardsFlipped() == true)
+            {
+                TempData["Visibility"] = "";
+            }
+            TempData.Keep();          
             return View("Index");
+        }
+
+        /// <summary>
+        /// Returns true if all game cardsa are disabled (i.e. flipped)
+        /// </summary>
+        /// <returns></returns>
+        public bool AllCardsFlipped()
+        {
+            if((string)TempData["ActionCardState"] == "disabled" && (string)TempData["PlaceCardState"] == "disabled" && (string)TempData["ChallengeCardState"] == "disabled")
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Increases player score, hides thumbs buttons and ends player turn
+        /// </summary>
+        /// <returns>Index view</returns>
+        public IActionResult ThumbsUp()
+        {
+            if (thisGame.turn == false)
+            {
+                player1.UpdatePlayerScore(player1);
+                TempData["Player1Score"] = player1.PlayerScore.ToString();
+            }
+            else
+            {
+                player2.UpdatePlayerScore(player2);
+                TempData["Player2Score"] = player2.PlayerScore.ToString();
+            }
+            PlayerTurn(thisGame.turn);
+          
+            return View("Index");
+        }
+
+        /// <summary>
+        /// Hides thumbs buttons and ends player turn
+        /// </summary>
+        /// <returns>Index view</returns>
+        public IActionResult ThumbsDown()
+        {
+            PlayerTurn(thisGame.turn);
+           
+            return View("Index");
+        }
+
+        public void PlayerTurn(bool turn) 
+        {
+            //increment number of turns on each turn
+            thisGame.numTurns += 1;
+
+            //change turn
+            thisGame.turn = thisGame.ChangeTurn(turn);
+
+            //show number of turns left on game form
+            int turnsLeft = thisGame.TurnsLeft(thisGame.numTurns);
+            TempData["NumberTurnsLeft"] = turnsLeft.ToString();
+
+            //hide thumbs buttons
+            TempData["Visibility"] = "invisible";
+
+            //reset game cards
+            TempData["ActionCardState"] = "enabled";
+            TempData["PlaceCardState"] = "enabled";
+            TempData["ChallengeCardState"] = "enabled";
+            TempData["RandomAction"] = "";
+            TempData["RandomPlace"] = "";
+            TempData["RandomChallenge"] = "";
+           
+            TempData.Keep();
+
         }
 
     }

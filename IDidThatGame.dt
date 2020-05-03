@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT2H51M25.0312244S" SolutionTotalViewTime="PT3H36M59.4347473S" SolutionTotalDebugTime="PT2M43.287236S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT1H57M45.9524524S" SolutionTotalViewTime="PT2H55M45.1870504S" SolutionTotalDebugTime="PT2M35.9644029S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
@@ -14,36 +14,36 @@
   </ProjectsCreatedDateList>
   <SessionTimeList />
   <LastSessionTimeList>
-    <DevTrackerDataItem ViewActiveTime="PT21.2378258S" EditActiveTime="PT23.8923901S">
+    <DevTrackerDataItem ViewActiveTime="PT17.0199715S" EditActiveTime="PT41.3524561S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>Debug Mode</Item>
       <ItemType>DebugModeItem</ItemType>
       <ProjectName />
-      <CreatedDate>2020-04-30T18:15:37.5936256-07:00</CreatedDate>
+      <CreatedDate>2020-05-01T18:54:26.9872177-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT9M10.6932909S" EditActiveTime="PT5M39.5468443S">
-      <ModifiedDate>2020-04-30T19:04:15.3215256-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT57.3359365S" EditActiveTime="PT1M50.8539195S">
+      <ModifiedDate>2020-05-01T18:54:18.5006324-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-30T18:15:27.9280357-07:00</CreatedDate>
+      <CreatedDate>2020-05-01T18:50:50.7628348-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT2M24.374853S" EditActiveTime="PT1M41.8292403S">
-      <ModifiedDate>2020-04-30T18:47:22.001734-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M32.2991875S" EditActiveTime="PT1M30.0350417S">
+      <ModifiedDate>2020-05-01T18:56:17.0588056-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
-      <CreatedDate>2020-04-30T18:44:48.3622084-07:00</CreatedDate>
+      <CreatedDate>2020-05-01T18:53:38.9386901-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
   </LastSessionTimeList>
@@ -194,10 +194,10 @@
       <CreatedDate>2020-04-18T06:54:10.5494362-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT2M43.287236S" EditActiveTime="PT44.2804072S">
+    <DevTrackerDataItem ViewActiveTime="PT3M0.3072075S" EditActiveTime="PT1M25.6328633S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>7</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>8</ViewedCount>
       <Item>Debug Mode</Item>
       <ItemType>DebugModeItem</ItemType>
       <ProjectName />
@@ -289,11 +289,11 @@
       <CreatedDate>2020-04-26T19:18:15.2249556-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT22M17.6782483S" EditActiveTime="PT17M49.0455512S">
-      <ModifiedDate>2020-04-30T19:04:15.3215256-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT23M15.0141848S" EditActiveTime="PT19M39.8994707S">
+      <ModifiedDate>2020-05-01T18:54:18.5006324-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>10</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>11</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
@@ -321,11 +321,11 @@
       <CreatedDate>2020-04-18T06:56:11.6329905-07:00</CreatedDate>
       <ViewedBy>Unknown User</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT12M55.8258682S" EditActiveTime="PT28M39.0101224S">
-      <ModifiedDate>2020-04-30T18:47:22.001734-07:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT15M28.1250557S" EditActiveTime="PT30M9.0451641S">
+      <ModifiedDate>2020-05-01T18:56:17.0588056-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>5</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>6</ViewedCount>
       <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
@@ -427,6 +427,38 @@
     </DevTrackerDataItem>
   </TotalTimeList>
   <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT17.0199715S" EditActiveTime="PT41.3524561S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2020-05-01T18:54:26.9872177-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M32.2991875S" EditActiveTime="PT1M30.0350417S">
+      <ModifiedDate>2020-05-01T18:56:17.0588056-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Views\Home\Index.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-05-01T18:53:38.9386901-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT57.3359365S" EditActiveTime="PT1M50.8539195S">
+      <ModifiedDate>2020-05-01T18:54:18.5006324-07:00</ModifiedDate>
+      <ModifiedBy>Unknown User</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\Unknown User\source\repos\IDidThatGame\IDidThatGame\IDidThatGame.csproj</ProjectName>
+      <CreatedDate>2020-05-01T18:50:50.7628348-07:00</CreatedDate>
+      <ViewedBy>Unknown User</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT2M24.374853S" EditActiveTime="PT1M41.8292403S">
       <ModifiedDate>2020-04-30T18:47:22.001734-07:00</ModifiedDate>
       <ModifiedBy>Unknown User</ModifiedBy>
