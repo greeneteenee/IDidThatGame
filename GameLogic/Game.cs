@@ -10,7 +10,7 @@ namespace GameLogic
     public class Game
     {
         public bool turn { get; set; }
-        public byte numTurns { get; set; }
+        public byte numTurns { get; set; } = 1;
 
         const byte maxNumTurns = 10;
        

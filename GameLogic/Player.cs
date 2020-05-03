@@ -5,7 +5,7 @@ namespace GameLogic
     public class Player
     {
         //CONSTRUCTOR: Player must have PlayerName
-        public Player(string name)
+        public Player()
         {
 
         }

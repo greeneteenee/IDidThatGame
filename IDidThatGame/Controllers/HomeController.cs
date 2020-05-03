@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using IDidThatGame.Models;
 using IDidThatGame.Data;
 using GameLogic;
+using Microsoft.AspNetCore.Html;
 
 namespace IDidThatGame.Controllers
 {
@@ -16,16 +17,16 @@ namespace IDidThatGame.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
         private static Game thisGame = new Game();
-        private static Player player1 = new Player("Thing 1");
-        private static Player player2 = new Player("Thing 2");
-        private static Player currPlayer = null;     
+        private static Player player1 = new Player();
+        private static Player player2 = new Player();        
        
 
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
-
+            player1.PlayerName = "Thing 1";
+            player2.PlayerName = "Thing 2";
         }  
 
        
@@ -155,26 +156,43 @@ namespace IDidThatGame.Controllers
             //increment number of turns on each turn
             thisGame.numTurns += 1;
 
-            //change turn
-            thisGame.turn = thisGame.ChangeTurn(turn);
-
-            //show number of turns left on game form
-            int turnsLeft = thisGame.TurnsLeft(thisGame.numTurns);
-            TempData["NumberTurnsLeft"] = turnsLeft.ToString();
-
             //hide thumbs buttons
             TempData["Visibility"] = "invisible";
 
-            //reset game cards
-            TempData["ActionCardState"] = "enabled";
-            TempData["PlaceCardState"] = "enabled";
-            TempData["ChallengeCardState"] = "enabled";
-            TempData["RandomAction"] = "";
-            TempData["RandomPlace"] = "";
-            TempData["RandomChallenge"] = "";
-           
-            TempData.Keep();
+            //if there's no more turns, display winner
+            if (thisGame.OutOfTurns(thisGame.numTurns) == true)
+            {
+                string winnerName = thisGame.CheckWinner(player1, player2);
+                TempData["WinnerName"] = winnerName;
+                TempData["WinnerTxt"] = "is the";
+                TempData["Winner"] = "WINNER";
+                
+            }
+            else
+            {
+                //change turn
+                thisGame.turn = thisGame.ChangeTurn(turn);
 
+                //show number of turns left on game form
+                int turnsLeft = thisGame.TurnsLeft(thisGame.numTurns);
+                TempData["NumberTurnsLeft"] = turnsLeft.ToString();
+
+              
+                //reset game cards
+                TempData["ActionCardState"] = "enabled";
+                TempData["PlaceCardState"] = "enabled";
+                TempData["ChallengeCardState"] = "enabled";
+                TempData["RandomAction"] = "";
+                TempData["RandomPlace"] = "";
+                TempData["RandomChallenge"] = "";
+
+                TempData.Keep();
+            }
+        }
+
+        public IActionResult DisplayWinner() 
+        {
+            return View();
         }
 
     }

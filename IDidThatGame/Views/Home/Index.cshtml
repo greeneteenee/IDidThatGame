@@ -18,9 +18,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col">               
-                    <div><h5 class="text-center mb-3">Turns left: @TempData["NumberTurnsLeft"]</h5></div>            
-            
+            <div class="col">
+                <div><h5 class="text-center m-3">Turns left: @TempData["NumberTurnsLeft"]</h5></div>
+                <div><h1 class="display-4 text-center m-5">@TempData["WinnerName"] </h1></div>
+                <div><h1 class="text-center mb-3">@TempData["WinnerTxt"] </h1></div>
+                <div><h1 class="display-1 text-center mb-3">@TempData["Winner"] </h1></div>
                 <div class="row">
                     <div class="col"><a asp-controller="Home" asp-action="ThumbsDown"><img src="~/images/ThumbDown.png" class="img-fluid d-inline @TempData["Visibility"]" alt="Thumbs down"></a></div>
                     <div class="col"><a asp-controller="Home" asp-action="ThumbsUp"><img src="~/images/ThumbUp.png" class="img-fluid d-inline @TempData["Visibility"]" alt="Thumbs up"></a></div>
