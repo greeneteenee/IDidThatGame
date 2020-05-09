@@ -68,6 +68,10 @@ namespace GameLogic
             return maxNumTurns - numTurns;
         }
 
+        public void ResetTurns(Game currGame)
+        {
+            currGame.numTurns = 1;
+        }
 
     }
 }

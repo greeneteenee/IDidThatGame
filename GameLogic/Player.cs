@@ -23,5 +23,10 @@ namespace GameLogic
             currPlayer.PlayerScore += 1;
         }
 
+        public void ResetPlayerScore(Player player)
+        {
+            player.PlayerScore = 0;
+        }
+
     }
 }

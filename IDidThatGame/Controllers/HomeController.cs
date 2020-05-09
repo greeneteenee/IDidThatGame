@@ -34,8 +34,8 @@ namespace IDidThatGame.Controllers
 
         public IActionResult Index()
         {
-            TempData["NumberTurnsLeft"] = thisGame.TurnsLeft(thisGame.numTurns).ToString();
-            TempData["Visibility"] = "invisible";
+            DispalyNumberOfTurns();
+            HideThumbsButtons();           
             TempData["Player1Score"] = player1.PlayerScore.ToString();
             TempData["Player2Score"] = player2.PlayerScore.ToString();
             TempData.Keep();
@@ -53,7 +53,17 @@ namespace IDidThatGame.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-
+        public IActionResult NewGame()
+        {
+            player1.ResetPlayerScore(player1);
+            player2.ResetPlayerScore(player2);
+            thisGame.ResetTurns(thisGame);
+            TempData.Clear();
+            DispalyNumberOfTurns();
+            HideThumbsButtons();          
+            TempData.Keep();
+            return View("Index");
+        }
 
         public async Task<IActionResult> GetRandomAction()
         {
@@ -156,8 +166,7 @@ namespace IDidThatGame.Controllers
             //increment number of turns on each turn
             thisGame.numTurns += 1;
 
-            //hide thumbs buttons
-            TempData["Visibility"] = "invisible";
+            HideThumbsButtons();         
 
             //if there's no more turns, display winner
             if (thisGame.OutOfTurns(thisGame.numTurns) == true)
@@ -166,6 +175,8 @@ namespace IDidThatGame.Controllers
                 TempData["WinnerName"] = winnerName;
                 TempData["WinnerTxt"] = "is the";
                 TempData["Winner"] = "WINNER";
+                TempData["PlayAgainLink"] = "CLICK HERE";
+                TempData["PlayAgainTxt"] = "to play again";
                 
             }
             else
@@ -188,6 +199,19 @@ namespace IDidThatGame.Controllers
 
                 TempData.Keep();
             }
+        }
+
+        /// <summary>
+        /// Displays number of turns
+        /// </summary>
+        public void DispalyNumberOfTurns()
+        {
+            TempData["NumberTurnsLeft"] = thisGame.TurnsLeft(thisGame.numTurns).ToString();
+        }
+
+        public void HideThumbsButtons()
+        {
+            TempData["Visibility"] = "invisible";
         }
 
         public IActionResult DisplayWinner() 
