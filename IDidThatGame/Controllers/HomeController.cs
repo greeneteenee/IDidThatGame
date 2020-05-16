@@ -34,7 +34,7 @@ namespace IDidThatGame.Controllers
 
         public IActionResult Index()
         {
-            DispalyNumberOfTurns();
+            DisplayNumberOfTurns();
             HighlightActivePlayer();
             HideThumbsButtons();           
             TempData["Player1Score"] = player1.PlayerScore.ToString();
@@ -57,10 +57,10 @@ namespace IDidThatGame.Controllers
         public IActionResult NewGame()
         {
             player1.ResetPlayerScore(player1);
-            player2.ResetPlayerScore(player2);
+            player2.ResetPlayerScore(player2);           
             thisGame.ResetTurns(thisGame);
             TempData.Clear();
-            DispalyNumberOfTurns();
+            DisplayNumberOfTurns();
             HideThumbsButtons();          
             TempData.Keep();
             return View("Index");
@@ -206,7 +206,7 @@ namespace IDidThatGame.Controllers
         /// <summary>
         /// Displays number of turns
         /// </summary>
-        public void DispalyNumberOfTurns()
+        public void DisplayNumberOfTurns()
         {
             TempData["NumberTurnsLeft"] = thisGame.TurnsLeft(thisGame.numTurns).ToString();
         }

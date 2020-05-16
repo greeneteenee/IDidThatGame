@@ -71,6 +71,7 @@ namespace GameLogic
         public void ResetTurns(Game currGame)
         {
             currGame.numTurns = 1;
+            currGame.turn = false; //player1 turn
         }
 
     }

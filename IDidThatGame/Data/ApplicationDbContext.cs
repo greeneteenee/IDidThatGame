@@ -17,5 +17,15 @@ namespace IDidThatGame.Data
         public DbSet<ActionItem> Actions { get; set; }
         public DbSet<PlaceItem> Places { get; set; }
         public DbSet<ChallengeItem> Challenges { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.SeedActionItems();
+            builder.SeedPlaceItems();
+            builder.SeedChallengeItems();
+        }
+
     }
 }
