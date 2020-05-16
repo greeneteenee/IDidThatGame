@@ -35,6 +35,7 @@ namespace IDidThatGame.Controllers
         public IActionResult Index()
         {
             DispalyNumberOfTurns();
+            HighlightActivePlayer();
             HideThumbsButtons();           
             TempData["Player1Score"] = player1.PlayerScore.ToString();
             TempData["Player2Score"] = player2.PlayerScore.ToString();
@@ -183,6 +184,7 @@ namespace IDidThatGame.Controllers
             {
                 //change turn
                 thisGame.turn = thisGame.ChangeTurn(turn);
+                HighlightActivePlayer();
 
                 //show number of turns left on game form
                 int turnsLeft = thisGame.TurnsLeft(thisGame.numTurns);
@@ -207,6 +209,20 @@ namespace IDidThatGame.Controllers
         public void DispalyNumberOfTurns()
         {
             TempData["NumberTurnsLeft"] = thisGame.TurnsLeft(thisGame.numTurns).ToString();
+        }
+
+        public void HighlightActivePlayer()
+        {
+            if (thisGame.turn == false)
+            {
+                TempData["HighlightP1"] = "border-left border-bottom shadow-sm";
+                TempData["HighlightP2"] = "";
+            }
+            else
+            {
+                TempData["HighlightP1"] = "";
+                TempData["HighlightP2"] = "border-right border-bottom shadow-sm";
+            }
         }
 
         public void HideThumbsButtons()
