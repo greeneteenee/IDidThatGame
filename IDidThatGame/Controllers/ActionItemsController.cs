@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IDidThatGame.Data;
 using IDidThatGame.Models;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace IDidThatGame.Controllers
-{
+{    
+    [Authorize(Roles = "Administrator, Registered user")]
     public class ActionItemsController : Controller
     {
         private readonly ApplicationDbContext _context;
