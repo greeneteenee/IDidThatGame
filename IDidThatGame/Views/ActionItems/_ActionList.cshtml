@@ -1,0 +1,27 @@
+﻿@model IEnumerable<IDidThatGame.Models.ActionItem>
+
+<table class="table">
+    <thead>
+        <tr>            
+            <th>
+                @Html.DisplayNameFor(model => model.ActionName)
+            </th>
+        
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@{var allActionItems = ViewData["AllActionItems"] as IEnumerable<ActionItem>;}
+@foreach (var item in allActionItems) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionName)
+            </td>           
+        <td style="width: 35%">
+            <a class="badge badge-secondary" asp-controller="ActionItems" asp-action="Edit" asp-route-id="@item.ActionId">Edit</a> |       
+            <a class="badge badge-secondary" asp-controller="ActionItems" asp-action="Delete" asp-route-id="@item.ActionId">Delete</a>
+        </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,4 +1,5 @@
 ﻿
+
 @{
     ViewData["Title"] = "Edit Game";
 }
@@ -10,8 +11,14 @@
         <div class="col"><a asp-controller="ChallengeItems" asp-action="Create"><img src="~/images/AddChallengeButton.png" class="img-fluid rounded" alt="Add Challenge button"></a></div>
     </div>
     <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col">
+            @await Html.PartialAsync("/Views/ActionItems/_ActionList.cshtml")
+        </div>
+        <div class="col">
+            @await Html.PartialAsync("/Views/PlaceItems/_PlaceList.cshtml")
+        </div>
+        <div class="col">
+            @await Html.PartialAsync("/Views/ChallengeItems/_ChallengeList.cshtml")
+        </div>
     </div>
 </div>

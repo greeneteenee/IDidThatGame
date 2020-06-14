@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace IDidThatGame.Models
         [Key]
         public int ChallengeId { get; set; }
 
+        [DisplayName("Challenges")]
         public string ChallengeName { get; set; }
 
         public string Category { get; set; }

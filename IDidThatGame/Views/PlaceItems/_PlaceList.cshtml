@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IDidThatGame.Models.PlaceItem>
+
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PlaceId)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PlaceName)
+            </th>          
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var allPlaceItems = ViewData["AllPlaceItems"] as IEnumerable<PlaceItem>;}
+        @foreach (var item in allPlaceItems)
+        {
+            <tr>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.PlaceId)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlaceName)
+                </td>
+                <td>
+                    <a class="badge badge-secondary" asp-controller="PlaceItems" asp-action="Edit" asp-route-id="@item.PlaceId">Edit</a> |
+                    <a class="badge badge-secondary" asp-controller="PlaceItems" asp-action = "Delete" asp-route-id = "@item.PlaceId"> Delete</a>
+            
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<IDidThatGame.Models.ChallengeItem>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ChallengeName)
+            </th>        
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var allChallengeItems = ViewData["AllChallengeItems"] as IEnumerable<ChallengeItem>;}
+        @foreach (var item in allChallengeItems)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChallengeName)
+                </td>
+                <td style="width: 35%">
+                    <a class="badge badge-secondary" asp-controller="ChallengeItems" asp-action="Edit" asp-route-id="@item.ChallengeId">Edit</a> |
+                    <a class="badge badge-secondary" asp-controller="ChallengeItems" asp-action="Delete" asp-route-id="@item.ChallengeId"> Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
