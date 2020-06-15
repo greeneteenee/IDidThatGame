@@ -15,7 +15,7 @@ namespace IDidThatGame.Models
         [Key]
         public int ChallengeId { get; set; }
 
-        [DisplayName("Challenges")]
+        [DisplayName("Challenge")]
         public string ChallengeName { get; set; }
 
         public string Category { get; set; }

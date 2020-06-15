@@ -1,18 +1,11 @@
 ﻿@model IDidThatGame.Models.ActionItem
 
-@{
-    ViewData["Title"] = "Edit";
-}
-
-<h1>Edit</h1>
-
-<h4>@Html.DisplayFor(model => model.ActionName)</h4>
+<h4>Add new @Html.DisplayNameFor(model => model.ActionName)</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ActionId" />
+        <form asp-controller="ActionItems" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>          
             <div class="form-group">
                 <label asp-for="ActionName" class="control-label"></label>
                 <input asp-for="ActionName" class="form-control" />
@@ -29,7 +22,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>

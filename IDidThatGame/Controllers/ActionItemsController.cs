@@ -61,8 +61,8 @@ namespace IDidThatGame.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(actionItem);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync(); 
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(actionItem);
         }
@@ -113,7 +113,7 @@ namespace IDidThatGame.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(actionItem);
         }
@@ -144,7 +144,7 @@ namespace IDidThatGame.Controllers
             var actionItem = await _context.Actions.FindAsync(id);
             _context.Actions.Remove(actionItem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("EditGame", "EditGame");
         }
 
         private bool ActionItemExists(int id)

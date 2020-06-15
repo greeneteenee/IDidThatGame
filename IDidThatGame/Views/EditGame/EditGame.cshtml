@@ -6,9 +6,9 @@
 
 <div class="container">
     <div class="row">
-        <div class="col"><a asp-controller="ActionItems" asp-action="Create"><img src="~/images/AddActionButton.png" class="img-fluid rounded" alt="Add Action button"></a></div>
-        <div class="col"><a asp-controller="PlaceItems" asp-action="Create"><img src="~/images/AddPlaceButton.png" class="img-fluid rounded" alt="Add Place button"></a></div>
-        <div class="col"><a asp-controller="ChallengeItems" asp-action="Create"><img src="~/images/AddChallengeButton.png" class="img-fluid rounded" alt="Add Challenge button"></a></div>
+        <div class="col"><a data-toggle="modal" data-target="#modalAddActionForm" asp-controller="ActionItems" asp-action="Create"><img src="~/images/AddActionButton.png" class="img-fluid rounded" alt="Add Action button"></a></div>
+        <div class="col"><a data-toggle="modal" data-target="#modalAddPlaceForm" asp-controller="PlaceItems" asp-action="Create"><img src="~/images/AddPlaceButton.png" class="img-fluid rounded" alt="Add Place button"></a></div>
+        <div class="col"><a data-toggle="modal" data-target="#modalAddChallengeForm" asp-controller="ChallengeItems" asp-action="Create"><img src="~/images/AddChallengeButton.png" class="img-fluid rounded" alt="Add Challenge button"></a></div>
     </div>
     <div class="row">
         <div class="col">
@@ -19,6 +19,54 @@
         </div>
         <div class="col">
             @await Html.PartialAsync("/Views/ChallengeItems/_ChallengeList.cshtml")
+        </div>
+    </div>
+</div>
+
+<!-- AddAction Modal -->
+<div class="modal fade" id="modalAddActionForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @await Html.PartialAsync("/Views/ActionItems/_AddAction.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AddPlace Modal -->
+<div class="modal fade" id="modalAddPlaceForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @await Html.PartialAsync("/Views/PlaceItems/_AddPlace.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AddChallenge Modal -->
+<div class="modal fade" id="modalAddChallengeForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @await Html.PartialAsync("/Views/ChallengeItems/_AddChallenge.cshtml")
+            </div>
         </div>
     </div>
 </div>

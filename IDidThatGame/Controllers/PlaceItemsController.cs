@@ -62,7 +62,7 @@ namespace IDidThatGame.Controllers
             {
                 _context.Add(placeItem);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(placeItem);
         }
@@ -113,7 +113,7 @@ namespace IDidThatGame.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(placeItem);
         }
@@ -144,7 +144,7 @@ namespace IDidThatGame.Controllers
             var placeItem = await _context.Places.FindAsync(id);
             _context.Places.Remove(placeItem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("EditGame", "EditGame");
         }
 
         private bool PlaceItemExists(int id)

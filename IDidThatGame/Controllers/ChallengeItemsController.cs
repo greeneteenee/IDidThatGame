@@ -62,7 +62,7 @@ namespace IDidThatGame.Controllers
             {
                 _context.Add(challengeItem);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(challengeItem);
         }
@@ -113,7 +113,7 @@ namespace IDidThatGame.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("EditGame", "EditGame");
             }
             return View(challengeItem);
         }
@@ -144,7 +144,7 @@ namespace IDidThatGame.Controllers
             var challengeItem = await _context.Challenges.FindAsync(id);
             _context.Challenges.Remove(challengeItem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("EditGame", "EditGame");
         }
 
         private bool ChallengeItemExists(int id)

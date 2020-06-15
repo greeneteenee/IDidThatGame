@@ -16,7 +16,7 @@ namespace IDidThatGame.Models
         [Key]
         public int PlaceId { get; set; }
 
-        [DisplayName("Places")]
+        [DisplayName("Place")]
         public string PlaceName { get; set; }
 
         public string Category { get; set; }

@@ -17,7 +17,7 @@ namespace IDidThatGame.Models
         [Key]
         public int ActionId { get; set; }
 
-        [DisplayName("Actions")]
+        [DisplayName("Action")]
         public string ActionName { get; set; }
 
         public string Category { get; set; }
